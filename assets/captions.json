@@ -1,0 +1,50 @@
+{
+  "eid": {
+    "en": {
+      "whatsapp": [
+        "Eid Mubarak! May your day be full of blessings.",
+        "Wishing you peace, joy, and happiness this Eid.",
+        "May Allah accept your prayers and good deeds. Eid Mubarak!"
+      ],
+      "instagram": [
+        "Eid vibes ✨🌙",
+        "Grateful heart, festive mood 🌙💛",
+        "Eid glow up ✨🕌"
+      ]
+    },
+    "ur": {
+      "whatsapp": [
+        "عید مبارک! اللہ آپ کو خوشیاں عطا فرمائے۔",
+        "اس عید پر آپ کی زندگی خوشیوں سے بھر جائے۔",
+        "اللہ آپ کی عبادات قبول فرمائے۔ عید مبارک!"
+      ],
+      "instagram": [
+        "عید کا رنگ 🌙✨",
+        "خوشیوں بھری عید 💛🌙",
+        "عید مبارک 🕌✨"
+      ]
+    }
+  },
+  "love": {
+    "en": {
+      "whatsapp": [
+        "You are my favorite notification ❤️",
+        "Love is a choice I’ll make every day."
+      ],
+      "instagram": [
+        "Love mode: ON 💖",
+        "You + me = magic ✨"
+      ]
+    },
+    "ur": {
+      "whatsapp": [
+        "محبت صرف احساس نہیں، ایک وعدہ ہے۔",
+        "تم ہو تو سب کچھ خوبصورت لگتا ہے۔"
+      ],
+      "instagram": [
+        "محبت کا رنگ 💖",
+        "تم میری خوشی ہو ✨"
+      ]
+    }
+  }
+}
