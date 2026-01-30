@@ -18,7 +18,7 @@ Future<void> initDI() async {
   sl.registerLazySingleton<Dio>(() {
     return NetworkHelper.createDio(
       baseUrl: 'https://api.openai.com/v1',
-      openAiKey: dotenv.env['OPEN_AI_KEY'] ?? '',
+      openAiKey: '',
     );
   });
   sl.registerLazySingleton(() => OpenAiApi(sl()));
