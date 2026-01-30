@@ -1,4 +1,5 @@
 import 'package:dio/dio.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:get_it/get_it.dart';
 import 'package:statusify/core/network/network_helper.dart';
 import 'package:statusify/features/captions/data/datasources/captions_local_ds.dart';
@@ -17,8 +18,7 @@ Future<void> initDI() async {
   sl.registerLazySingleton<Dio>(() {
     return NetworkHelper.createDio(
       baseUrl: 'https://api.openai.com/v1',
-      openAiKey:
-          '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',
+      openAiKey: dotenv.env['OPEN_AI_KEY'] ?? '',
     );
   });
   sl.registerLazySingleton(() => OpenAiApi(sl()));
