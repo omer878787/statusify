@@ -15,12 +15,12 @@ final sl = GetIt.instance;
 Future<void> initDI() async {
   // Data sources
   sl.registerLazySingleton(() => CaptionsLocalDataSource());
-  sl.registerLazySingleton<Dio>(() {
-    return NetworkHelper.createDio(
-      baseUrl: 'https://api.openai.com/v1',
-      openAiKey: '',
-    );
-  });
+  // sl.registerLazySingleton<Dio>(() {
+  //   return NetworkHelper.createDio(
+  //     baseUrl: 'https://api.openai.com/v1',
+  //     openAiKey: '',
+  //   );
+  // });
   sl.registerLazySingleton(() => OpenAiApi(sl()));
   // Repository
   sl.registerLazySingleton<CaptionsRepository>(
