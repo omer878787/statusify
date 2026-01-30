@@ -1,4 +1,4 @@
-import '../../domain/entities/caption_filters.dart';
+import 'package:statusify/features/captions/domain/entities/caption_filters.dart';
 
 sealed class CaptionsEvent {}
 

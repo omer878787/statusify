@@ -1,4 +1,4 @@
-import '../../domain/entities/caption.dart';
+import 'package:statusify/features/captions/domain/entities/caption.dart';
 
 sealed class CaptionsState {}
 

@@ -3,7 +3,7 @@ import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:share_plus/share_plus.dart';
 import 'package:statusify/core/di/injection_container.dart';
-import '../../domain/entities/caption_filters.dart';
+import 'package:statusify/features/captions/domain/entities/caption_filters.dart';
 import '../bloc/captions_bloc.dart';
 import '../bloc/captions_event.dart';
 import '../bloc/captions_state.dart';
@@ -64,7 +64,9 @@ class ResultsPage extends StatelessWidget {
                               ),
                               const SizedBox(width: 10),
                               OutlinedButton.icon(
-                                onPressed: () => Share.share(text),
+                                onPressed: () => SharePlus.instance.share(
+                                  ShareParams(text: text),
+                                ),
                                 icon: const Icon(Icons.share),
                                 label: const Text("Share"),
                               ),

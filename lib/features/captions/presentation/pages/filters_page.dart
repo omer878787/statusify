@@ -15,10 +15,145 @@ class _FiltersPageState extends State<FiltersPage> {
   String platform = "whatsapp";
   String emojiStyle = "eid";
 
-  final categories = const ["eid", "love"];
-  final languages = const ["en", "ur"];
-  final platforms = const ["whatsapp", "instagram"];
-  final emojiStyles = const ["none", "simple", "eid", "hearts", "funny"];
+  final categories = const [
+    // Religious & Events
+    "eid",
+    "ramadan",
+    "jummah",
+    "islamic",
+    "durood",
+
+    // Love & Emotions
+    "love",
+    "romantic",
+    "sad",
+    "heartbreak",
+    "missing",
+    "emotional",
+
+    // Poetry & Literature
+    "poetry",
+    "shayari",
+    "urdu_poetry",
+    "english_poetry",
+    "ghazal",
+
+    // Motivation & Life
+    "motivational",
+    "inspirational",
+    "life",
+    "success",
+    "positive",
+    "self_growth",
+
+    // Social & Attitude
+    "attitude",
+    "alone",
+    "fake_people",
+    "truth",
+    "reality",
+
+    // Fun & Casual
+    "funny",
+    "sarcastic",
+    "mood",
+    "chill",
+    "weekend",
+
+    // Friendship & Family
+    "friendship",
+    "best_friend",
+    "family",
+    "brother",
+    "sister",
+
+    // Social Media Ready
+    "instagram",
+    "whatsapp",
+    "facebook",
+    "short_status",
+  ];
+
+  final languages = const [
+    // Global
+    "en", // English
+    // South Asia
+    "ur", // Urdu
+    "hi", // Hindi
+    "bn", // Bengali
+    "pa", // Punjabi
+    "ps", // Pashto
+    "sd", // Sindhi
+    "gu", // Gujarati
+    "ta", // Tamil
+    // Middle East
+    "ar", // Arabic
+    "fa", // Persian (Farsi)
+    // Europe
+    "tr", // Turkish
+    "es", // Spanish
+    "fr", // French
+    // East / Global
+    "id", // Indonesian
+    "ms", // Malay
+  ];
+
+  final platforms = const [
+    // Messaging Apps
+    "whatsapp",
+    "telegram",
+    "signal",
+
+    // Social Media
+    "instagram",
+    "facebook",
+    "threads",
+    "snapchat",
+
+    // Short-form & Trendy
+    "tiktok",
+    "twitter", // (X)
+    "youtube", // Shorts / Community posts
+    // Professional & Public
+    "linkedin",
+
+    // General / Fallback
+    "story",
+    "bio",
+    "status",
+  ];
+
+  final emojiStyles = const [
+    // Basic
+    "none",
+    "simple",
+
+    // Love & Emotions
+    "hearts",
+    "romantic",
+    "sad",
+    "broken",
+
+    // Religious / Events
+    "eid",
+    "ramadan",
+    "islamic",
+
+    // Fun & Casual
+    "funny",
+    "sarcastic",
+    "playful",
+
+    // Motivation & Attitude
+    "motivational",
+    "success",
+    "attitude",
+
+    // Social / Aesthetic
+    "aesthetic",
+    "minimal",
+    "bold",
+  ];
 
   @override
   Widget build(BuildContext context) {
@@ -63,7 +198,7 @@ class _FiltersPageState extends State<FiltersPage> {
                     language: language,
                     platform: platform,
                     emojiStyle: emojiStyle,
-                    count: 10,
+                    count: 30,
                   );
                   context.pushNamed('results', extra: filters);
                 },
